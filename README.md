@@ -1,11 +1,11 @@
 # Secure-Web-Messenger
     Secure Web Messenger project for BU, EC601
 <br>
-## System Architecture
+##System Architecture
 1.Front-end development to build a UI<br>
 2.Setup our own server<br>
 3.Connect the UI and server to implement data transmission(use signal protocol to make sure the security<br>
-## Technologies
+##Technologies
 ###1.Front-end development
 HTML5, CSS, JavaScript(using bootstrap)
 ###2.Deploy a server
@@ -15,5 +15,5 @@ The Signal Protocol improves security by using true end-to-end encryption with p
 ###4.Networking programming
 Using python to do something about internet architecture, IP addresses, Python TCP connections, Ports and Sockets.
 <br>
-## Code
+##Code
 1.Basically implement a UI which includes a log in interface and a chat interface in the folder front-end-design.
