@@ -1,0 +1,25 @@
+[debug] [2018-11-01T07:44:33.926Z] ----------------------------------------------------------------------
+[debug] [2018-11-01T07:44:33.928Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-11-01T07:44:33.928Z] CLI Version:   6.0.0
+[debug] [2018-11-01T07:44:33.928Z] Platform:      darwin
+[debug] [2018-11-01T07:44:33.928Z] Node Version:  v10.13.0
+[debug] [2018-11-01T07:44:33.928Z] Time:          Thu Nov 01 2018 03:44:33 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-11-01T07:44:33.928Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-01T07:44:33.936Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-01T07:44:33.936Z] > authorizing via signed-in user
+[debug] [2018-11-01T07:44:33.936Z] [iam] checking project web-messenger-ef075 for permissions ["firebase.projects.get"]
+[debug] [2018-11-01T07:44:33.938Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/web-messenger-ef075:testIamPermissions  
+
+[debug] [2018-11-01T07:44:34.354Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-01T07:44:34.356Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/web-messenger-ef075  
+ 
+[debug] [2018-11-01T07:44:34.645Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/duqinmei/WebstormProjects/firebase/web'...
+[info] 
+[debug] [2018-11-01T07:44:34.649Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/417102332929/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-01T07:44:35.248Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000
