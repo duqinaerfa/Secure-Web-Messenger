@@ -15,4 +15,4 @@ The Signal Protocol improves security by using true end-to-end encryption with p
 Using firebase to do back-end design
 ## Code
 1.Basically implement a UI which includes a log in interface and a chat interface in the folder front-end-design.(useless now)
-2.Using firebase to finish all the functions except signal protocol in the folder Web.
+2.Using firebase to finish all the functions except signal protocol in the folder "a Web messenger using firebase".
