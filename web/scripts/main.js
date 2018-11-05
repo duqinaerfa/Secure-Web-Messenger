@@ -15,7 +15,7 @@
  */
 'use strict';
 
-// Signs-in Friendly Chat.
+// Signs-in Secure web messenger.
 function signIn() {
   // Sign in Firebase using popup auth and Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
