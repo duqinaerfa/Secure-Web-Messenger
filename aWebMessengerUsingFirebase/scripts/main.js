@@ -19,7 +19,20 @@
 function signIn() {
   // Sign in Firebase using popup auth and Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().signInWithPopup(provider);
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+        .then(function() {
+            // Existing and future Auth states are now persisted in the current
+            // session only. Closing the window would clear any existing state even
+            // if a user forgets to sign out.
+            // ...
+            // New sign-in will be persisted with session persistence.
+            firebase.auth().signInWithRedirect(provider);
+        })
+        .catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+        });
 }
 
 // Signs-out of Friendly Chat.
@@ -51,15 +64,25 @@ function isUserSignedIn() {
 
 // Loads chat messages history and listens for upcoming ones.
 function loadMessages() {
-  // Loads the last 12 messages and listen for new ones.
-  var callback = function(snap) {
-    var data = snap.val();
-    displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
-  };
-
-  firebase.database().ref('/messages/').limitToLast(12).on('child_added', callback);
-  firebase.database().ref('/messages/').limitToLast(12).on('child_changed', callback);
+    // Loads the last 12 messages and listen for new ones.
+    var user = firebase.auth().currentUser;
+    if (user) {
+        var callback = function (snap) {
+            var data = snap.val();
+            displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
+        };
+        firebase.database().ref('/messages/').limitToLast(12).on('child_added', callback);
+        firebase.database().ref('/messages/').limitToLast(12).on('child_changed', callback);
+    }else{
+        var callback = function (snap) {
+            var data = snap.val();
+            displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
+        };
+        firebase.database().ref('/messages/').limitToLast(0).on('child_added', callback);
+        firebase.database().ref('/messages/').limitToLast(0).on('child_changed', callback);
+    }
 }
+
 
 // Saves a new message on the Firebase DB.
 function saveMessage(messageText) {
@@ -184,6 +207,7 @@ function authStateObserver(user) {
 
     // We save the Firebase Messaging Device token and enable notifications.
     saveMessagingDeviceToken();
+    loadMessages();
   } else { // User is signed out!
     // Hide user's profile and sign-out button.
     userNameElement.setAttribute('hidden', 'true');
@@ -192,6 +216,7 @@ function authStateObserver(user) {
 
     // Show sign-in button.
     signInButtonElement.removeAttribute('hidden');
+    loadMessages();
   }
 }
 
@@ -277,7 +302,6 @@ function toggleButton() {
 function checkSetup() {
   if (!window.firebase || !(firebase.app instanceof Function) || !firebase.app().options) {
     window.alert('You have not configured and imported the Firebase SDK. ' +
-        'Make sure you go through the codelab setup instructions and make ' +
         'sure you are running the codelab using `firebase serve`');
   }
 }
@@ -317,6 +341,3 @@ mediaCaptureElement.addEventListener('change', onMediaFileSelected);
 
 // initialize Firebase
 initFirebaseAuth();
-
-// We load currently existing chat messages and listen to new ones.
-loadMessages();
