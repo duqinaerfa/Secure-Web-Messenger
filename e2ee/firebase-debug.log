@@ -1,0 +1,25 @@
+[debug] [2018-11-26T07:57:30.555Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T07:57:30.557Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-11-26T07:57:30.557Z] CLI Version:   6.0.0
+[debug] [2018-11-26T07:57:30.557Z] Platform:      darwin
+[debug] [2018-11-26T07:57:30.557Z] Node Version:  v10.13.0
+[debug] [2018-11-26T07:57:30.558Z] Time:          Mon Nov 26 2018 02:57:30 GMT-0500 (Eastern Standard Time)
+[debug] [2018-11-26T07:57:30.558Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-26T07:57:30.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T07:57:30.566Z] > authorizing via signed-in user
+[debug] [2018-11-26T07:57:30.566Z] [iam] checking project funforme-d8b9c for permissions ["firebase.projects.get"]
+[debug] [2018-11-26T07:57:30.569Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/funforme-d8b9c:testIamPermissions  
+
+[debug] [2018-11-26T07:57:30.911Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T07:57:30.913Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/funforme-d8b9c  
+ 
+[debug] [2018-11-26T07:57:31.189Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/duqinmei/WebstormProjects/e2ee'...
+[info] 
+[debug] [2018-11-26T07:57:31.192Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/549253413947/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-26T07:57:31.558Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5000

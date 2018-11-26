@@ -266,8 +266,8 @@ main, #messages-card {
 }
 
 #LoginModal {
-    min-width: 240px !important;
-    width: 50% !important;
+    min-width: 100% !important;
+    width: 100% !important;
 }
 
 .demo-footer {
