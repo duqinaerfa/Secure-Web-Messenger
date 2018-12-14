@@ -22,9 +22,9 @@ A fundamental feature of this API is to allow the manipulation and storage of pr
 The welcome page<br>
 ![welcomepage](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/welcomepage.png)<br>
 Inform users to join in a chat room<br>
-![newchat](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/newchat.png)<br>
+<img scr='https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/newchat.png'
 Password<br>
-![password](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/password.png)<br>
+<img scr='https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/password.png'
 Secure chat user interface<br>
 ![securechat](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/securechat.png)<br>
 The firebase screenshot(As you can see, it completely hides the information from the firebase server)<br>
