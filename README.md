@@ -22,17 +22,17 @@ A fundamental feature of this API is to allow the manipulation and storage of pr
 The welcome page<br>
 ![welcomepage](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/welcomepage.png)<br>
 Inform users to join in a chat room<br>
-![newchat](https://github.com/joshem/Secure-Web-Messenger/screenshot/newchat.png)<br>
+![newchat](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/newchat.png)<br>
 Password<br>
-![password](https://github.com/joshem/Secure-Web-Messenger/screenshot/password.png)<br>
+![password](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/password.png)<br>
 Secure chat user interface<br>
-![securechat](https://github.com/joshem/Secure-Web-Messenger/screenshot/securechat.png)<br>
+![securechat](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/securechat.png)<br>
 The firebase screenshot(As you can see, it completely hides the information from the firebase server)<br>
-![firebase](https://github.com/joshem/Secure-Web-Messenger/screenshot/securechatfirebase.png)<br>  
+![firebase](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/securechatfirebase.png)<br>  
 2. A group chat web application based on firebase which could implement multiple people online chatting at the same time, which could be access on the welcome page.(without encryption, could not hide from firebase server)
 The group chat user interface<br>
-![group chat](https://github.com/joshem/Secure-Web-Messenger/screenshot/groupchat.png)<br>
+![group chat](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/groupchat.png)<br>
 The firebase screenshot<br>(by comparing with the firebase of the one-to-one chat room with encryption, you could see the firebase server knows anything)
-![firebase](https://github.com/joshem/Secure-Web-Messenger/screenshot/groupchatfirebase.png)<br>
+![firebase](https://github.com/joshem/Secure-Web-Messenger/blob/master/screenshot/groupchatfirebase.png)<br>
 3. These messengers are all able for users to easily sign in with Google account.
 
