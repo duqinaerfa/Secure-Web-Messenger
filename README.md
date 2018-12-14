@@ -1,6 +1,6 @@
 # Secure-Web-Messenger
-    Secure Web Messenger project for BU, EC601
-    using by accessing [demo](https://funforme-d8b9c.firebaseapp.com/)
+Secure Web Messenger project for BU, EC601<br>
+using by accessing [demo](https://funforme-d8b9c.firebaseapp.com/)
 ## System Architecture
 1.Front-end development to build a UI<br>
 2.Connect with firebase to store data<br>
@@ -10,7 +10,7 @@
 HTML5, CSS, JavaScript based on friendly-chat.
 ### 2.Firebase
 Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users.
-In these project, we created two firebase project, one for the group chat without encryption to deploy, the other is for the one-to-one secure chat.
+In these project, we created two firebase project, one for the group chat without encryption to deploy, the other is for the one-to-one secure chat.<br>
 click the link below to see more detail.<br>
 [firebase](https://firebase.google.com/)
 ### 3.Web Crypto API
