@@ -11,7 +11,7 @@ HTML5, CSS, JavaScript based on friendly-chat.
 ### 2.Firebase
 Firebase gives you functionality like analytics, databases, messaging and crash reporting so you can move quickly and focus on your users.
 In these project, we created two firebase project, one for the group chat without encryption to deploy, the other is for the one-to-one secure chat.
-click the link below to see more detail.
+click the link below to see more detail.<br>
 [firebase](https://firebase.google.com/)
 ### 3.Web Crypto API
 The Web Crypto API is an interface allowing a script to use cryptographic primitives in order to build systems using cryptography.<br>
