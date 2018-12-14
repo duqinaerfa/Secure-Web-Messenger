@@ -1,6 +1,6 @@
 # Secure-Web-Messenger
     Secure Web Messenger project for BU, EC601
-    using by accessing [demo](https://funforme-d8b9c.firebaseapp.com/)
+    using by accessing [link](https://funforme-d8b9c.firebaseapp.com/)
 ## System Architecture
 1.Front-end development to build a UI<br>
 2.Connect with firebase to store data<br>
